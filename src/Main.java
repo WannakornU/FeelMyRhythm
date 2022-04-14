@@ -19,7 +19,7 @@ public class Main {
         
         new FeelMyRhythm();
 
-        System.out.println("00000");
+        System.out.println("mymymy");
 
     }
     
