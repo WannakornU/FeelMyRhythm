@@ -9,9 +9,10 @@
  */
 import java.awt.Graphics;
 import java.awt.Image;
-import javax.swing.ImageIcon;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+
 public class FeelMyRhythm extends JFrame{
     
     private Image screenImage;
@@ -27,7 +28,7 @@ public class FeelMyRhythm extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         
-        introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.png")).getImage();
+        introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
     }
 
     public void paint(Graphics g) {
