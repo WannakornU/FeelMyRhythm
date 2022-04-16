@@ -19,7 +19,7 @@ public class Main {
         
         new FeelMyRhythm();
 
-        System.out.println("mymymy");
+        System.out.println("explain to artar");
 
     }
     
