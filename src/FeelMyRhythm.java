@@ -29,8 +29,12 @@ public class FeelMyRhythm extends JFrame{
         setVisible(true);
         
         introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
+        
+        Music introMusic = new Music("introMusic.mp3", true);
+        introMusic.start();
     }
 
+    //@Override
     public void paint(Graphics g) {
         screenImage = createImage(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
         screenGraphic = screenImage.getGraphics();
