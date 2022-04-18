@@ -7,15 +7,11 @@
  *
  * @author rada
  */
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Image;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class FeelMyRhythm extends JFrame{ 
     
@@ -29,11 +25,7 @@ public class FeelMyRhythm extends JFrame{
     
     
     private JButton startButton = new JButton(startButtonBasicImage);
-    
-    
-   
-    
-   
+
     public FeelMyRhythm() {
         //setUndecorated(true);
         setTitle("FEEL MY RHYTHM");
@@ -45,7 +37,7 @@ public class FeelMyRhythm extends JFrame{
         //setBackground(new Color(0, 0, 0, 0));
         setLayout(null);
        
-        startButton.setBounds(400, 50, 500, 150);
+        startButton.setBounds(550, 270, 197, 100);
         startButton.setBorderPainted(false);
         startButton.setContentAreaFilled(false);
         startButton.setFocusPainted(false);
@@ -63,28 +55,19 @@ public class FeelMyRhythm extends JFrame{
                 Music buttonEnteredMusic = new Music("buttonEnteredMusic.mp3",false);
                 buttonEnteredMusic.start();
             }
-            
         });
-        add(startButton);
-        
-        
-        
-        
+
         Music introMusic = new Music("introMusic.mp3",true);
         introMusic.start();
+
+        JLabel background = new JLabel(new ImageIcon(introBackground));
+        background.setSize(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
+        add(background);
+        background.setLayout(new FlowLayout());
+        background.add(startButton);
+
     }
 
-    public void paint(Graphics g) {
-        screenImage = createImage(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
-        screenGraphic = screenImage.getGraphics();
-        screenDraw(screenGraphic);
-        g.drawImage(screenImage, 0, 0, null);
-    }
-    
-    public void screenDraw(Graphics g) {
-        g.drawImage(introBackground, 0, 0, null);
-        //paintComponents(g);
-        this.repaint();
-    }
+
 
 }
