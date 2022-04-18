@@ -38,7 +38,7 @@ public class FeelMyRhythm extends JFrame{
         //setUndecorated(true);
         setTitle("FEEL MY RHYTHM");
         setSize(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
-        //setResizable(false);
+        setResizable(false);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
