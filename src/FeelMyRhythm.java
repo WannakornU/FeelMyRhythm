@@ -3,10 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-/**
- *
- * @author rada
- */
 import java.awt.Graphics;
 import java.awt.Image;
 
@@ -49,7 +45,7 @@ public class FeelMyRhythm extends JFrame{
 
         //introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
 
-        startButton.setBounds(550, 270, 197, 100);
+        startButton.setBounds(550, 170, 197, 100);
         startButton.setBorderPainted(false);
         startButton.setContentAreaFilled(false);
         startButton.setFocusPainted(false);
