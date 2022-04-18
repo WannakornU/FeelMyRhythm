@@ -22,6 +22,8 @@ import java.awt.event.MouseListener;
 
 
 import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.FlowLayout;
 
 public class FeelMyRhythm extends JFrame{
     
@@ -31,7 +33,7 @@ public class FeelMyRhythm extends JFrame{
     private ImageIcon startButtonBasicImage = new ImageIcon(Main.class.getResource("/images/startButtonBasic.png"));
     private ImageIcon startButtonEnteredImage = new ImageIcon(Main.class.getResource("/images/startButtonEntered.png"));
     private Image introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();;
-    
+
     
     private JButton startButton = new JButton(startButtonBasicImage);
     
@@ -47,7 +49,7 @@ public class FeelMyRhythm extends JFrame{
 
         //introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
 
-        startButton.setBounds(500, 150, 197, 100);
+        startButton.setBounds(550, 270, 197, 100);
         startButton.setBorderPainted(false);
         startButton.setContentAreaFilled(false);
         startButton.setFocusPainted(false);
@@ -77,12 +79,18 @@ public class FeelMyRhythm extends JFrame{
         
         Music introMusic = new Music("introMusic.mp3", true);
         introMusic.start();
+
+        JLabel background = new JLabel(new ImageIcon(introBackground));
+        background.setSize(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
+        add(background);
+        background.setLayout(new FlowLayout());
+        background.add(startButton);
+        //this.add(startButton);
         
-        this.add(startButton);
         
     }
     
-    @Override
+    /*@Override
     public void paint(Graphics g) {
         screenImage = createImage(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
         screenGraphic = screenImage.getGraphics();
@@ -95,5 +103,5 @@ public class FeelMyRhythm extends JFrame{
         g.drawImage(introBackground, 0, 0, null);
         this.repaint();
     }
-
+*/
 }
