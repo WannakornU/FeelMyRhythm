@@ -13,6 +13,7 @@ import java.io.FileInputStream;
 
 import javazoom.jl.player.Player;
 
+
 public class Music  extends Thread{
     
     private Player player;
@@ -22,17 +23,17 @@ public class Music  extends Thread{
     private BufferedInputStream bis;
     
     public Music(String name, boolean isLoop){
-        try {
+
+        try{
             this.isLoop = isLoop;
-            file = new File(Main.class.getResource("/music/" + name).toURI());
-            fis = new FileInputStream(file);
-            bis = new BufferedInputStream(fis);
-            player = new Player(bis);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());     
+            file = new File(Main.class.getResource("/music/"+ name).toURI());
+            
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
+        
     }
-    
+       
     public int getTime() {
         if(player == null)
             return 0;
@@ -42,22 +43,23 @@ public class Music  extends Thread{
     public void close() {
         isLoop = false;
         player.close();
-        this.interrupt();
+        this.interrupt();                         
     }
     
-    //@Override
-    public void run() {
-        try {
-            do {
-                player.play();
+    @Override
+    public void run(){
+        try{
+            do{
                 fis = new FileInputStream(file);
                 bis = new BufferedInputStream(fis);
-                player = new Player(bis);
+                player = new Player(bis);  
+                player.play();
             } while(isLoop);
-        } catch (Exception e) {
+            
+        }catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
+ }
     
     
-}
