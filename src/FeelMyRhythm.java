@@ -48,9 +48,9 @@ public class FeelMyRhythm extends JFrame{
         //setBackground(new Color(0, 0, 0, 0));
         //setLayout(null);
         
-<<<<<<< Updated upstream
+
         introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
-=======
+
         startButton.setBounds(640, 300, 197, 101);
         startButton.setBorderPainted(false);
         startButton.setContentAreaFilled(false);
@@ -80,7 +80,7 @@ public class FeelMyRhythm extends JFrame{
             
         Music introMusic = new Music("introMusic.mp3", true);
         introMusic.start();
->>>>>>> Stashed changes
+
     }
 
     public void paint(Graphics g) {
