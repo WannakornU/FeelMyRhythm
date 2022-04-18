@@ -42,14 +42,14 @@ public class FeelMyRhythm extends JFrame{
         //setUndecorated(true);
         setTitle("FEEL MY RHYTHM");
         setSize(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
-        //setResizable(false);
+        setResizable(false);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
 
         //introBackground = new ImageIcon(Main.class.getResource("/images/introBackground.jpg")).getImage();
 
-        startButton.setBounds(550, 270, 197, 100);
+        startButton.setBounds(550, 200, 197, 100);
         startButton.setBorderPainted(false);
         startButton.setContentAreaFilled(false);
         startButton.setFocusPainted(false);

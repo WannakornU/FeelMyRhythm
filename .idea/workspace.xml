@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6ab4fb-140d-4ebe-8ad8-f45226db7b62" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FeelMyRhythm/FeelMyRhythm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FeelMyRhythm/FeelMyRhythm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FeelMyRhythm/FeelMyRhythm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FeelMyRhythm/FeelMyRhythm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FeelMyRhythm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FeelMyRhythm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +23,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/radaw/Downloads/jlayer-1.0.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/radaw/Downloads/jlayer-1.0.1.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -54,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650282026208</updated>
       <workItem from="1650282031306" duration="1178000" />
+      <workItem from="1650284967784" duration="182000" />
     </task>
     <servers />
   </component>
