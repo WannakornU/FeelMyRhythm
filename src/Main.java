@@ -19,8 +19,6 @@ public class Main {
         
         new FeelMyRhythm();
 
-        System.out.println("mymymy");
-
     }
     
 }
