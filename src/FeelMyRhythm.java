@@ -56,6 +56,7 @@ public class FeelMyRhythm extends JFrame{
 
         startButton.addMouseListener(new MouseAdapter() {
         
+
             @Override
             public void mouseEntered(MouseEvent e) {
                 startButton.setIcon(startButtonEnteredImage);
@@ -86,22 +87,6 @@ public class FeelMyRhythm extends JFrame{
         background.setLayout(new FlowLayout());
         background.add(startButton);
         //this.add(startButton);
-        
-        
-    }
-    
-    /*@Override
-    public void paint(Graphics g) {
-        screenImage = createImage(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
-        screenGraphic = screenImage.getGraphics();
-        screenDraw(screenGraphic);
-        g.drawImage(screenImage, 0, 0, null); 
 
     }
-    
-    public void screenDraw(Graphics g) {
-        g.drawImage(introBackground, 0, 0, null);
-        this.repaint();
-    }
-*/
 }

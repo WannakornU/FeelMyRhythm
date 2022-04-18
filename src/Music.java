@@ -12,7 +12,10 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import javazoom.jl.player.Player;
-public class Music extends Thread{
+
+
+public class Music  extends Thread{
+    
     private Player player;
     private boolean isLoop;
     private File file;
@@ -20,6 +23,7 @@ public class Music extends Thread{
     private BufferedInputStream bis;
     
     public Music(String name, boolean isLoop){
+
         try{
             this.isLoop = isLoop;
             file = new File(Main.class.getResource("/music/"+ name).toURI());
@@ -29,8 +33,8 @@ public class Music extends Thread{
         }
         
     }
-    
-    public int getTime(){
+       
+    public int getTime() {
         if(player == null)
             return 0;
         return player.getPosition();
@@ -56,4 +60,6 @@ public class Music extends Thread{
             System.out.println(e.getMessage());
         }
     }
-}
+ }
+    
+    
